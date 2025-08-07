@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Array</title>
+</head>
+
+<body>
+    <script>
+        //Receber uma string com palavras separadas por "+"
+        const str = prompt('Escreva palavras e separe-as com "+"');
+
+        // Converter para array, *separando* as palavras
+        const palavras = str.split("+")
+        palavras.forEach(p => alert(p));
+
+        // Pegue a ultima palavra
+        const ultimaP = palavras.pop();
+
+        // Exibindo a quantidade total de palvras e a ultima do array
+        alert(`São: ${palavras.length} palavras, sendo a ultima palavra: ${ultimaP}`);
+    </script>
+</body>
+
+</html>

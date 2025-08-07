@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Array</title>
+</head>
+
+<body>
+    <script>
+        // Array com valores numéricos
+        const elementos = [2, 7, 9, 10, 3, 1]; //Total: 32
+
+        // Soma total usando reduce()
+        const soma = elementos.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0)
+        console.log(soma);
+
+        /* A variável soma recebe o resultado final retornado por reduce().
+         Com reduce, a cada iteração, a função recebe um acumulador (que começa com o valor inicial e é atualizado em cada passo) e um valorAtual (o elemento atual do array), soma esses valores e retorna o resultado, que será o acumulador da próxima iteração. No fim, reduce retorna o valor acumulado de todas as iterações. */
+    </script>
+</body>
+
+</html>

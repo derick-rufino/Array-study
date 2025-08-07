@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Array</title>
+</head>
+
+<body>
+    <script>
+        // Array com valores numéricos
+        const elementos = [2, 7, 9, 16, 3, 1]; //Maior num: 16
+
+        // Faz uma busca usando reduce e utiliza o seu iterador para descobrir o maior valor
+        const maiorNum = elementos.reduce((acumulador, indexAtual) => Math.max(acumulador, indexAtual), -Infinity)
+        console.log(maiorNum)// -infinity ajuda cado o maior valor seja negativo
+        /* Funciona assim: -infinity + 2, o itereador passa a ser 2, e então roda normalmente*/
+
+
+        // Depois descobri o Spread Operator, que é literalmente só usar o Math.max e colocar retissências antes da variável
+        const maiorComSpread = Math.max(...elementos);
+        console.log('1. Spread Operator:', maiorComSpread);
+
+        //! Abordagem incorreta: retorna NaN
+        // const maiorNum = Math.max(elementos);
+        // console.log(maiorNum);
+    </script>
+</body>
+
+</html>
