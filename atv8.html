@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudos de Array</title>
+  </head>
+
+  <body>
+    <script>
+      // Definir um array om valores repetidos
+      const elementos = [2, 3, 6, 3, 3, 7, 0, 3, 1, 2, 3, 6, 9, 0]; // nº 3 se pete 5 vezes
+
+      // Variável nova para receber a quantidade de vezes que se repete
+      // Filtra o array elementos e usa "n" para definir o filtro como o número 3
+      const repeteN3 = elementos.filter((n) => n === 3).length;
+      console.log(repeteN3);
+    </script>
+  </body>
+</html>
