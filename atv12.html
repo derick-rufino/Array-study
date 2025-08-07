@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudos de Array</title>
+  </head>
+
+  <body>
+    <script>
+      // Definir um array om valores repetidos
+      const elementos = [2, 3, 6, 3, 3, 7, 0, 3, 1, 2, 3, 6, 9, 0];
+
+      // Reorganizar em ordem crescente
+      const crescente = elementos.toSorted(); // Cria um novo array com .toSorted(), ao invés de alterar o arrays original como o .sort() faz
+      // Para cada elemento ele loga no console
+      crescente.forEach((n) => console.log(n));
+    </script>
+  </body>
+</html>
