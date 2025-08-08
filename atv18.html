@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Array - Reforço</title>
+</head>
+
+<body>
+    <script>
+        // Criar um Array numérico
+        const numeros = prompt("digite números eparados por espaços");
+        // Sparando os números e aramazenando num array novo
+        const numArray = numeros.split(" ");
+
+        //  Aqui o valor inicial do acumulador deve ser 0 ou Infinity
+        // subtrair um valor negativo de -Infinity, iria retornar -Infinity, ou seja, apenas valores positivos forneceriam o resultado desejado
+        const menorNumero = numArray.reduce((acumulador, numAtual) => Math.min(acumulador, numAtual), 0);
+        alert(`Seu array: ${numArray} \n Menor número: ${menorNumero}`);
+
+
+    </script>
+</body>
+
+</html>

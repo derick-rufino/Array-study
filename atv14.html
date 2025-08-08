@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Array - Reforço</title>
+</head>
+
+<body>
+    <script>
+        // Criar um Array para receber uma frase
+        const frase = prompt("Digite uma frase:")
+
+        // Separar as palvras usando o espaço entre elas e aramazená-las em um array chamado palavras
+        const palavras = frase.split(" ");
+        // Para cada elemento dentro array, n´so usamos um alert. Isso fará com que cada palavra seja exibida
+        palavras.forEach(p => {
+            alert(p)
+
+        });
+        // Ao final, contamos quantas palvras foram armazenas no array e exibimos
+        alert("Total de palavras: " + palavras.length)
+    </script>
+</body>
+
+</html>
